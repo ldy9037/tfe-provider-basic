@@ -27,11 +27,21 @@ tfe provider를 활용해서  terraform cloud 기본 구성
  
 ## 시작하기
 
-
+Terraform 초기화
 ```sh
-
+terraform init
 ```
 
+Git pre-commit 설정
+```sh
+pip install pre-commit
+pre-commit install
+```
+
+pre-commit 수동 실행
+```sh
+pre-commit run -a
+```
 
 ## 주의사항
 -
