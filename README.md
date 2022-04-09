@@ -59,7 +59,9 @@ pre-commit run -a
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.21.0 |
 
 ## Modules
 
@@ -67,11 +69,16 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [tfe_organization.demo_organization](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/organization) | resource |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_tfe_organization_name"></a> [tfe\_organization\_name](#input\_tfe\_organization\_name) | Terraform Organization 이름 | `string` | n/a | yes |
+| <a name="input_tfe_organization_owner"></a> [tfe\_organization\_owner](#input\_tfe\_organization\_owner) | Terraform Organization 소유자 | `string` | n/a | yes |
 
 ## Outputs
 
