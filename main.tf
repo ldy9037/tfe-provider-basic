@@ -7,7 +7,18 @@ terraform {
 provider "tfe" {
 }
 
+locals {
+  all_members = csvdecode(file("assets/all.csv"))
+}
+
 resource "tfe_organization" "demo_organization" {
   name  = var.tfe_organization_name
   email = var.tfe_organization_owner
+}
+
+resource "tfe_organization_membership" "demo_organization_membership" {
+  for_each = { for all_members in local.all_members : all_members.email => all_members... }
+
+  organization = tfe_organization.demo_organization.name
+  email        = each.key
 }

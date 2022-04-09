@@ -72,6 +72,7 @@ No modules.
 | Name | Type |
 |------|------|
 | [tfe_organization.demo_organization](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/organization) | resource |
+| [tfe_organization_membership.demo_organization_membership](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/organization_membership) | resource |
 
 ## Inputs
 
