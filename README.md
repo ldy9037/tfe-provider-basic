@@ -43,6 +43,11 @@ pre-commit 수동 실행
 pre-commit run -a
 ```
 
+환경변수로 TFE_TOKEN([Terraform API Token](https://www.terraform.io/cloud-docs/users-teams-organizations/users#api-tokens)) 지정
+```sh
+export TFE_TOKEN=<token>
+```
+
 ## 주의사항
 -
 
