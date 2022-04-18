@@ -79,6 +79,7 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [tfe_oauth_client.demo_oauth_client](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/oauth_client) | resource |
 | [tfe_organization.demo_organization](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/organization) | resource |
 | [tfe_organization_membership.demo_organization_membership](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/organization_membership) | resource |
 
@@ -86,6 +87,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_tfc_oauth_client"></a> [tfc\_oauth\_client](#input\_tfc\_oauth\_client) | OAuth Token ID 정보 확인을 위한 VCS 연결정보 | <pre>object({<br>    name             = string,<br>    api_url          = string,<br>    http_url         = string,<br>    service_provider = string<br>  })</pre> | <pre>{<br>  "api_url": "https://api.github.com",<br>  "http_url": "https://github.com",<br>  "name": "github-demo",<br>  "service_provider": "github"<br>}</pre> | no |
+| <a name="input_tfc_oauth_token"></a> [tfc\_oauth\_token](#input\_tfc\_oauth\_token) | VCS Provider 연결을 위한 계정 Access token (ghp\_xxxx) | `string` | n/a | yes |
 | <a name="input_tfe_organization_name"></a> [tfe\_organization\_name](#input\_tfe\_organization\_name) | Terraform Organization 이름 | `string` | n/a | yes |
 | <a name="input_tfe_organization_owner"></a> [tfe\_organization\_owner](#input\_tfe\_organization\_owner) | Terraform Organization 소유자 | `string` | n/a | yes |
 

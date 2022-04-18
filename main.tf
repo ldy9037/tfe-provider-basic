@@ -22,3 +22,11 @@ resource "tfe_organization_membership" "demo_organization_membership" {
   organization = tfe_organization.demo_organization.name
   email        = each.key
 }
+
+resource "tfe_oauth_client" "demo_oauth_client" {
+  organization     = tfe_organization.demo_organization.id
+  api_url          = var.tfc_oauth_client.api_url
+  http_url         = var.tfc_oauth_client.http_url
+  oauth_token      = var.tfc_oauth_token
+  service_provider = var.tfc_oauth_client.service_provider
+}
