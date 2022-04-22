@@ -63,6 +63,7 @@ export TFE_TOKEN=<token>
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.1.7 |
 | <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.21.0 |
 
 ## Providers
