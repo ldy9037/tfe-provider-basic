@@ -28,3 +28,28 @@ variable "tfc_oauth_token" {
   description = "VCS Provider 연결을 위한 계정 Access token (ghp_xxxx)"
   type        = string
 }
+
+variable "tfc_workspaces_network" {
+  description = "demo infra의 Workspace 이름"
+  type        = map(any)
+}
+
+variable "tfc_terraform_version" {
+  description = "workspace에서 사용 할 Terraform Version"
+  type        = string
+}
+
+variable "github_branch" {
+  description = "Github Branch"
+  type        = map(any)
+}
+
+variable "github_username" {
+  description = "Github 계정"
+  type        = string
+}
+
+variable "github_repository" {
+  description = "Github Repository 명"
+  type        = string
+}
